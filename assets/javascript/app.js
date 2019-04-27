@@ -61,7 +61,68 @@ var game = {
     }
 }
 
-    
+$.each($("input[name='question-1']:checke"), function(){
+    if($(this.val() == questions[1].correctAnswer){
+        game.correct++;
+    } else {
+        game.incorrect++;
+    }
+});
+$.each($("input[name='question-2']:checke"), function(){
+    if($(this.val() == questions[2].correctAnswer){
+        game.correct++;
+    } else {
+        game.incorrect++;
+    }
+});
+$.each($("input[name='question-3']:checke"), function(){
+    if($(this.val() == questions[3].correctAnswer){
+        game.correct++;
+    } else {
+        game.incorrect++;
+    }
+});
+$.each($("input[name='question-4']:checke"), function(){
+    if($(this.val() == questions[4].correctAnswer){
+        game.correct++;
+    } else {
+        game.incorrect++;
+    }
+});
+$.each($("input[name='question-5']:checke"), function(){
+    if($(this.val() == questions[5].correctAnswer){
+        game.correct++;
+    } else {
+        game.incorrect++;
+    }
+});
+$.each($("input[name='question-6]:checke"), function(){
+    if($(this.val() == questions[6].correctAnswer){
+        game.correct++;
+    } else {
+        game.incorrect++;
+    }
+});
+$.each($("input[name='question-7']:checke"), function(){
+    if($(this.val() == questions[7].correctAnswer){
+        game.correct++;
+    } else {
+        game.incorrect++;
+    }
+});
+$.each($("input[name='question-8']:checke"), function(){
+    if($(this.val() == questions[8].correctAnswer){
+        game.correct++;
+    } else {
+        game.incorrect++;
+    }
+});
+
+this.result();
+},
+
+}
+
 
 
     
