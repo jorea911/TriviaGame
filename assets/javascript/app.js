@@ -1,13 +1,5 @@
 $('#start').on('click,' function(){
-    for(var i=0; i<question.length;i++){
-        $('#sub-container').append('<h2>'+questions[i].question+'</h2>')
-        for(var j=0;j<questions[i]).answers.length;j++){
-            $('#sub-container').append("<input type='radio' name='question-"+i+"' value='"+questions[i].answers[j]+"'>"+questions[i].answers[j])
-        }
-    }
-})
-
-
+   
 
 var questions = [{
 question: "What was one of the best movies of Batman ever made?",
@@ -42,6 +34,42 @@ questions:"In what movie did Uma Thurman play the role of a sexy wife of a LA mo
 answers:["Gattica","Batman and Robin","Kill Bill: Vol 1","Kill Bill: Vol 2","Kill Bill: Vol 3","Pulp Fiction"],
 correctAnswer:"Pulp Fiction"
 }, {
+
+}];
+
+var game = {
+    correct: 0,
+    incorrect: 0,
+    counter: 120,
+    countdown: function(){
+        game.counter--;
+        $('#counter').html(game.counter);
+        if(game.counter<=0){
+            console.log("Time's a Runnin out Buckoo's);
+            game.done();
+        }
+
+
+    },
+    start: function(){
+        for(var i=0; i<question.length;i++){
+            $('#sub-container').append('<h2>'+questions[i].question+'</h2>')
+            for(var j=0;j<questions[i]).answers.length;j++){
+                $('#sub-container').append("<input type='radio' name='question-"+i+"' value='"+questions[i].answers[j]+"'>"+questions[i].answers[j])
+            }
+        }
+    }
+}
+
+    
+
+
+    
+
+
+
+
+
 
 
 
